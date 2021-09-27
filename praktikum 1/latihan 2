@@ -1,0 +1,10 @@
+#praktikum kedua
+#mengukur luas suatu ruangan
+"""dwi prasetyo
+nim 065002100011"""
+print("kali ini kita akan menghitung suatu luas ruang kelas ya")
+p= float(input("berapa panjang ruang kelas?"))
+l= float(input("berapa lebar ruang kelas?"))
+s= input("masukan satuan meter/inci")
+L= p*l
+print("jika panjangnya",p,"dan lebarnya adalah",l,"maka luas ruang kelas adalah",L,s)
