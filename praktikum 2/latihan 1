@@ -1,0 +1,15 @@
+#praktikum ke 2
+#hari senin 27 september 2021
+"""dwi prasetyo
+065002100011
+"""
+a=float(input("masukan nilai a = "))
+b=float(input("masukan nilai b = "))
+print(" jumlah a ditambah b adalah = ", float(a+b))
+print("selisih antara a dan b adalah = ", float(a-b))
+print("hasil kali a dan b adalah =", float(a*b))
+print("sisa pembagian a dan b adalah =", float(a%b))
+print("hasil pembagian a dengan b adalah=", float(a/b))
+import math
+print("hasil dari log a adalah = ", math.log10(a))
+print("hasil pangkat a dan ba adlah =", float(a**b))
