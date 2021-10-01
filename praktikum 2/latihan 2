@@ -1,0 +1,20 @@
+"""
+praktikum 2 latihan 2
+DWI PRASETYO
+065002100011
+"""
+#Membuat Program Untuk Menghitung Jarak Antara Dua Titik Di Permukaan Bumi
+import math
+print("Hello Selamat Datang")
+print("kita akan menghitung jarak antara jakarta dan bandung")
+a=float(input("Masukan lattitude kota pertama ="))
+b=float(input("Masukan longitude kota pertama ="))
+c=float(input("Masukan lattitude kota kedua ="))
+d=float(input("Masukan longitude kota kedua ="))
+#masuk rumus
+dac=(c-a)
+dbd=(d-b)
+p=math.sin(math.radians(dac/2))**2+math.cos(math.radians(a))*math.cos(math.radians(c))*math.sin(math.radians(dbd/2))**2
+q=2*math.atan2(math.sqrt(p),math.sqrt(1-p))
+b=6371.01*q
+print(b, "kilometer")
