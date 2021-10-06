@@ -1,0 +1,36 @@
+"""
+praktikum 3 latihan ke 2
+dwi prasetyo
+065002100011
+"""
+#langkah awal
+a=int(input("masukan nilai A :"))
+b=int(input("masukan nilai B :"))
+c=int(input("mnasukan nilai c :"))
+#masuk ke rumus
+import math
+D=(b**2)-(4*a*c)
+if(a==0):
+    print("bukan merupakan persmaan kuadrat")
+elif(D==0):
+    x1=(-b/(2*a))
+    print("persamaan kuadrat",a,"x^2 +",b,"x +",c)
+    print("determiannya =",D)
+    print("merupakan akar kembar")
+    print("akar",(x1))
+elif(D>0):
+    x1=(-b+(math.sqrt(D)))/(2*a)
+    x2=(-b-(math.sqrt(D)))/(2*a)
+    print("persamaan kuadrat",a,"x^2 +",b,"x +",c)
+    print("determiannya =",D)
+    print("memiliki akar berbeda")
+    print("akar x1 =",x1)
+    print("akar x2 =", x2)
+elif(D<0):
+    print("persamaan kuadrat",a,"x^2 +",b,"x +",c)
+    print("determiannya =",D)
+    print("merupakan akar imajiner")
+    print(-b,"+ Akar",D,"/ 2*",a)
+    print(-b,"- Akar",D,"/ 2*",a)
+    
+    
