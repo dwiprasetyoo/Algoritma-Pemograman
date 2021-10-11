@@ -1,0 +1,5 @@
+b=int(input("masukan angka maximal"))
+for baris in range(b, 0 ,-1):
+    for kolom in range(1, baris+1):
+        print(baris, end ="")
+    print()
