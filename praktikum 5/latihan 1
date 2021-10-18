@@ -1,0 +1,48 @@
+"""
+Dwi prasetyo
+065002100011
+"""
+nilai=0
+nsiswa = list()
+x=True
+while(x==True):
+    inputNilai= str(input("Masukan Nilai : "))
+    if (inputNilai==""):
+        x=False
+        nsiswa.append(nilai)
+        rata_rata = sum(nsiswa) / len(nsiswa)
+        print("rata - ratanya adalah :", rata_rata)
+    elif inputNilai == "A": 
+            nilai = float(4.00)
+            print("nilai",nilai)
+    elif inputNilai == "A-":
+            nilai = float(3.75)
+            print("nilai",nilai)
+    elif inputNilai == "B+":
+            nilai = float(3.50)
+            print("nilai",nilai)
+    elif inputNilai== "B":
+            nilai = float(3.00)
+            print("nilai",nilai)
+    elif inputNilai == "B-":
+            nilai = float(2.75)
+            print("nilai",nilai)
+    elif inputNilai== "C+":
+            nilai = float(2.50)
+            print("nilai",nilai)
+    elif inputNilai== "C":
+            nilai = float(2.00)
+            print("nilai",nilai)
+    elif inputNilai== "C-":
+            nilai = float(1.75)
+            print("nilai",nilai)
+    elif inputNilai == "D":
+            nilai = float(1.50)
+            print("nilai",nilai)
+    elif inputNilai == "E":
+            nilai = float(1.25)
+            print("nilai",nilai)
+    else:
+        print("masukan nilai yang benar")
+        
+       
