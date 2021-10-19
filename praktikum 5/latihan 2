@@ -1,0 +1,37 @@
+"""
+Praktikum 5 latihan 2
+Dwi prasetyo
+065002100011"""
+#menentukan harga sesuai usia
+n="0"
+total=0
+tampung=0
+#masuk ke pengulangan while
+while(n!=""):
+    n=float(input("masukan usia:"))
+    tampung+=1
+#masuk ke percabngan
+    if(n == 0):
+        break;
+    elif(n <= 2):
+        print("gartis")
+        total+=0
+        print("running total", total)
+    elif ( n >= 3 and n <= 12):
+        print("$14.00")
+        total+=14.00
+        print("running total", total)
+    elif (n <= 65):
+        print("$18.00")
+        total+=18.00
+        print("running total", total)
+    else:
+        print("$23,00")
+        total+=23.00
+        print("running total", total)
+#kembali ke kondisi while
+user=float(input("masukan jumlah uang"))
+if(user<total):
+    print("Uang anda tidak cukup, yang harusnya anda bayar adalah", total)
+elif(user>=total):
+    print("kembalian anda adalah", user-total, ", terika kasih selamat datang kemnbali")
