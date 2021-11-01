@@ -1,0 +1,51 @@
+def program(nilai="0", total=0,tampung=0):
+    while(nilai!=0):
+        inputNilai= str(input("Masukan Nilai : "))
+        tampung=tampung+1
+        if (inputNilai==""):
+            return total/(tampung-1)
+        elif inputNilai == "A": 
+                
+                print("nilai=4")
+                total+=4
+        elif inputNilai == "A-":
+               
+                print("nilai=3.75")
+                total+=3.75
+        elif inputNilai == "B+":
+                
+                print("nilai=3.50")
+                total+=3.50
+        elif inputNilai== "B":
+                
+                print("nilai=3.00")
+                total+=3
+        elif inputNilai == "B-":
+                
+                print("nilai=2.75")
+                total+=2.75
+        elif inputNilai== "C+":
+                
+                print("nilai=2.50")
+                total+=2.50
+        elif inputNilai== "C":
+                
+                print("nilai=2.00")
+                total+=2
+        elif inputNilai== "C-":
+               
+                print("nilai=1.75")
+                total+=1.75
+        elif inputNilai == "D":
+                
+                print("nilai=1.50")
+                total+=1.50
+        elif inputNilai == "E":
+                
+                print("nilai=1.25")
+                total+=1.25
+        else:
+            print("masukan nilai yang benar")
+
+rerata=program()
+print("rata ratanya adalah",rerata)
