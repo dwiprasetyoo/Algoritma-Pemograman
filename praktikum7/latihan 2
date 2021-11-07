@@ -1,0 +1,34 @@
+def run ():
+    print("Selamat datang di program kami yang dapat menghitung jumlah hari dalam setiap bulan dan tahunya")
+
+    print("untuk mengakhiri program masukan -1")
+def loop (x=True):
+    while(x==True):
+    
+    
+        inputBulan = int(input("Masukkan Bulan dalam angka (1-12): "))
+    
+        inputTahun = int(input("Masukkan Tahun: "))
+    
+        if(inputBulan == -1):
+            x=False
+            print("terimakasih sudah menggunakan program kami")
+        
+        elif(inputBulan >= 13 or inputBulan == 0 or inputBulan <= -2):
+            print("Bulan yang anda masukan tidak terdapat di dalam kalender masehi")
+        
+        elif(inputBulan == 1 or inputBulan == 3 or inputBulan == 5 or inputBulan == 7 or inputBulan == 8 or inputBulan == 10 or inputBulan == 12):
+            print("Jumlah hari pada bulan", inputBulan , "ditahun", inputTahun, "adalah 31 hari")
+        
+        elif(inputBulan==2):
+                if (inputTahun % 4 == 0 and inputBulan == 2):
+                
+                    print("jumlah hari pada bulan", inputBulan , "ditahun", inputTahun, "adalah 29 hari")
+                
+                else:
+                    print("jumlah hari pada bulan", inputBulan , "ditahun", inputTahun, "adalah 28 hari")
+                
+        else:
+            print("jumlah hari pada bulan", inputBulan , "ditahun", inputTahun, "adalah 30 hari")
+run()
+loop()
