@@ -1,0 +1,32 @@
+"""
+Dwi Prasetyo
+065002100011
+Sistem Informasi
+"""
+print("program ini menentukan bilangan prima atau bukan")
+x=False
+def prima(nilai):
+    if (nilai==2 or nilai==3 or nilai==5 or nilai==7) or (nilai % 2 != 0 and nilai % 3 != 0 and nilai % 5 != 0 and nilai % 7 != 0):
+        print(nilai,"merupakan bilangan prima")
+    else:
+        NonPrima(nilai)
+        
+
+
+def NonPrima(nilai):
+    if nilai>=1:
+        for i in range(2, nilai):
+            if (nilai % i)==0:
+                print(nilai,"bukan bilangan prima")
+                print("karena",i,"x",nilai//i,"hasilnya adalah",nilai)
+                break
+            else:
+                ("")
+    else:
+        print("eror")
+               
+value=int(input("masukan nilai:"))
+prima(value)
+
+
+   
