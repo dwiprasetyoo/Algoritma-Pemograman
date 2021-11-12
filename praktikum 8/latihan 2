@@ -1,0 +1,34 @@
+"""
+DwiPrasetyo
+065002100011
+Sistem Informasi
+"""
+def pertama(nilai):
+    if (nilai%5)==1:
+        print(nilai,"'st'")
+    elif (nilai%10==2):
+        print(nilai, "'nd'")
+    elif (nilai%15==3):
+        print(nilai, "'rd'")
+    elif (nilai%20==4 or nilai%20==7 or nilai%20==5):
+        print(nilai,"'th'")
+    else:
+        kedua(nilai)
+        
+def kedua(nilai):
+    if(nilai%5==3):
+        print(nilai,"'rd'")
+    elif(nilai%5==4):
+        print(nilai,"'th'")
+
+x=True
+while(x==True):
+    value=int(input("masukan angka"))
+    pertama(value)
+    if (value==0):
+        x=False
+        print(0, "'th'")
+        print("terima kasih telah menggunakan program saya")
+pertama(value)
+
+
