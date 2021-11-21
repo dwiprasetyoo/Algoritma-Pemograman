@@ -1,0 +1,39 @@
+"""
+Dwi prasetyo
+065002100011
+"""
+
+print("tekan 1 untuk mengubah desimal menjadi maxdesimal")
+print("tekan 2 untuk mengubah maxdesimal menjadi desimal")
+
+a=int(input(""))
+def pertama(Desi):
+    nilai=hex(Desi).replace("0x", "")
+    hasil=print(nilai)
+    return hasil
+if a==1:
+    x=True
+    print("program ini akan mengubah desimal menjadi hexadesimal, tekan -1 untuk mengkahiri")
+    while (x==True):
+        Desi=int(input("masukan integer desimal"))
+        if Desi==-1:
+            x=False
+            print("program selesai")
+        else:
+            pertama(Desi)
+
+def kedua(hexadesi):
+    nilai=print(hexadesi)
+    return nilai
+if a==2:
+    x=True
+    print("program ini akan mengubah hexadesimal menajdi desimal, tekan -1 untuk mengkahiri")
+    while x==True:
+        hexadesi=int(input("masukan integer hexadesimal:"),16)
+        if hexadesi==-1:
+            x=False
+            print("program selesai")
+        else:
+            kedua(hexadesi)
+
+
