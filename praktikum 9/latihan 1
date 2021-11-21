@@ -1,0 +1,23 @@
+def penjumlah(angka=0, jumlah=0, i=1):
+    if(jumlah<=0):
+        return 0
+    else:
+        angka=int(input("masukan bilangan ke-"+str(i)+":"))
+        if (jumlah==1):
+            return angka
+        else:
+            i+=1
+            return angka+penjumlah(angka,jumlah-1,i)
+total=int(input("masukan jumlah:"))
+nilai=penjumlah(jumlah=total)
+print("hasil dari penjumlahan adalah:" + str(nilai))
+
+a=int(input("masukan angka"))
+b=int(input("masukan pangkat"))
+
+def pangkat(a,b):
+    if b>=1:
+        return a*pangkat(a,b-1)
+    return a
+hasil=pangkat(a,b)
+print("hasilnya:",hasil)
