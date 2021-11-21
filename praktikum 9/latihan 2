@@ -1,0 +1,29 @@
+"""
+Dwi Prasetyo
+065002100011
+"""
+def program(angka, pangkat):
+    if angka == 0:
+        return 0
+    elif angka == 1:
+        return 1
+    else:
+        if pangkat>1:
+            return angka*program(angka,pangkat-1)
+        elif pangkat==1:
+            return angka
+        elif pangkat==0:
+            return 1
+        elif pangkat<0:
+            angka_=1/(angka*program(angka,pangkat-1))
+            return angka_
+        else:
+            print("eror")
+def kedua(anginput=0,panginput=0):
+    print("ini merupakan program pemangkatan positif dan negatif, tekan enter jika sudah selesai")
+    anginput=int(input("masukan angka"))
+    panginput=int(input("masukan pangkat"))
+    hasil=program(angka=anginput,pangkat=panginput)
+    print("hasilnya adalah:",hasil)
+kedua()
+
