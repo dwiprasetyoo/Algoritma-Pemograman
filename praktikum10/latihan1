@@ -1,0 +1,26 @@
+"""
+dwi prasetyo
+065002100011
+"""
+def pertama():
+    file=open("Biodata.txt","w")
+    file.write(data)
+    file.close()
+def kedua(data):
+    file=open("Biodata.txt","r")
+    text=file.read()
+    print(text)
+    file.close()
+print("program biodata")
+nama=input("masukan namamu:")
+umur=input("masukan umur:")
+alamat=input("masukan alamat mu:")
+email=input("masukan email mu:")
+dosen=input("masukan nama dosen mu")
+data="Nama:{}\nUmur:{}\nAlamat:{}\nEMail:{}\nDosen:{}".format(nama,umur,alamat,email,dosen)
+print("")
+pertama()
+print("berikut ini data kamu"),kedua(data)
+
+
+
