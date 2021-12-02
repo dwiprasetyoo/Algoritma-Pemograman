@@ -1,0 +1,52 @@
+"""
+dwi prasetyo
+065002100011
+"""
+def satu (data):
+    file=open(NamaFile+".txt","w")
+    file.write(data)
+    file.close()
+def dua ():
+    file=open(NamaFile+".txt","r")
+    text=file.read()
+    print(text)
+    file.close()
+def tiga(data):
+    file = open(NamaFile+'.txt', 'a')
+    file.write(data)
+    file.close()
+
+
+
+x=True
+while(x==True):
+    print("===== program file handling =====")
+    print("1. Membaca dan menulis file")
+    print("2. Membaca File")
+    print("3. Menambahkan Text pada file")
+    print("4. Keluar dari program")
+    angka=int(input("masukan angka pilihan kamu(1/2/3/4) : "))
+    if angka == 1:
+        NamaFile=input("Masukan nama file :")
+        Namamu=input("Masukan namamu :")
+        Nim=int(input("Masukan NIM kamu :"))
+        Tahun=int(input("Masukan tahun angkatanmu :"))
+        print("File Berhasil Dibuat")
+        print("")
+        print("")
+        data=("\nNamamu:{}\nNim:{}\nAngkatan:{}").format(Namamu,Nim,Tahun)
+        satu(data)
+    elif angka==2:
+        NamaFile=input("Masukan nama file :")
+        dua()
+        print("")
+        print("")
+    elif angka==3:
+        NamaFile=input("Masukan nama file :")
+        sahabat=input("Masukan nama sahabatmu :")
+        tambahan=input("Masukan catatan tambahan kamu:")
+        data=("\nNama Sahabat:{}\nCatatan:{}").format(sahabat,tambahan)
+        tiga(data)
+    elif angka==4:
+        x=False
+        print("terimaksih sudah menggunakan program saya")
