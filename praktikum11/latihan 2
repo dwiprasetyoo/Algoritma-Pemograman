@@ -1,0 +1,43 @@
+"""
+dwi prasetyo
+065002100011
+praktikum 11 latihan 2
+"""
+
+class a:
+
+
+	def __init__(self, posisi):
+		self.posisi = posisi
+		self.length = len(posisi)
+
+	def __str__(self):
+		return " ".join([str(a) for a in self.posisi])
+
+	def rekursif(self, n=None):
+		if n is None: n = self.length
+
+
+		if n == 1:
+			return
+
+
+		for i in range(n - 1):
+			if self.posisi[i] > self.posisi[i + 1]: self.posisi[i], self.posisi[i + 1] = self.posisi[i + 1], self.posisi[i]
+
+
+		self.rekursif(n - 1)
+
+
+def utama():
+	posisi = [3,-2,9,8,5,4,1]
+
+
+	final =a(posisi)
+
+	final.rekursif()
+	print("list yang udah disorting :\n", final)
+
+
+if __name__ == "__main__":
+	utama()
