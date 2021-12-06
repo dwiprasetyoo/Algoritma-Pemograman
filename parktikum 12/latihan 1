@@ -1,0 +1,26 @@
+"""
+dwi prasetyo
+065002100011
+praktikum 12 latihan 1
+"""
+class mahasiswa:
+
+
+    def __init__(self,nama,nim,tahun):
+        self.nama=nama
+        self.nim=nim
+        self.tahun=tahun
+    def printMaha(self):
+        print("Nama :"+self.nama)
+        print("Nim :"+str(self.nim))
+        print("Tahun angkatan :"+str(self.tahun))
+
+nama=input("masukan namamu :")
+nim=str(input("masukan nim kamu : "))
+tahun=str(input("masukan tahun angkatanmu :"))
+
+maha1=mahasiswa(nama,nim,tahun)
+maha1.printMaha()
+
+
+
