@@ -1,0 +1,58 @@
+"""
+dwi prasetyo
+065002100011
+praktikum 12 latihan 2
+"""
+class Mahasiswa:
+    def __init__(self,nama,nilai,):
+        self.nama=nama
+        self.nilai=nilai
+    def printMaha(self):
+        print("Nama :"+self.nama)
+        
+        print("Nilai :"+str(self.nilai))
+x=True
+while(x==True):
+
+    print("===== Program OOP =====")
+    print("1. Mendklarasikan Objek")
+    print("2. Menampilkan Objek")
+    print("3. Merubah Nilai Objek")
+    print("4. Menghapus Objek")
+    print("5. Keluar Dari Program")
+    pil=int(input("masukan pilihan berupa angka (1/2/3/4) :"))
+
+    if (pil==1):
+        nama=input("masukan namamu :")
+        nilai=input("masukan nilaimu :")
+        maha1=Mahasiswa(nama, nilai)
+        print("data berhasil ditambahkan")
+
+    elif(pil==2):
+        maha1=Mahasiswa(nama, nilai)
+        maha1.printMaha()
+
+    elif(pil==3):
+        a="nama"
+        b="nilai"
+        pil2=input("Apa yang ingin kamu ubah (Nama/Nilai) : ")
+        if(pil2==a):
+            nama=input("masukan namamu :")
+            print("data berhasil di ubah")
+
+        elif(pil2==b):
+            nilai=input("masukan nilaimu :")
+            print("data berhasil diubah")
+
+    elif(pil==4):
+        print("Data Berhasil Dihapus")
+        nama="none"
+        nilai="none"
+
+    elif(pil==5):
+        x=False
+        print("terima kasih")
+
+
+
+
