@@ -1,0 +1,11 @@
+"""
+Dwi Prasetyo
+065002100011
+"""
+import pandas as pd
+df=pd.read_csv("negara.csv")
+mean=df.groupby(["Benua"]).mean()
+std=df.groupby(["Benua"]).std()
+print(df)
+print(mean)
+print(std)
